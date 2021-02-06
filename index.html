@@ -17,6 +17,8 @@
         padding: 7px 7px;
         border: none;
         background-color: transparent;
+        outline: none;
+        transform: scale(4);
       }
       div {
         width: 100%;
@@ -27,32 +29,33 @@
       }
       span {
         width: 4px;
-        height: 16px;
+        height: 14px;
         background-color: #fff;
         display: block;
         position: absolute;
-        transition: all 1s ease-in-out;
+        transition: all 1s ease;
+        /* border: 0.01px solid red; */
       }
       .f {
         top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
+        /* left: 50%; */
+        left: 5px;
+        /* transform: translate(-50%, 0); */
       }
       .ff {
-        top: calc(50% - 8px);
-        left: 6px;
+        top: calc(50% - 7px);
+        left: 5px;
         transform: rotate(90deg);
       }
       .button-close .f {
-        top: -1px;
-        height: 18px;
-        left: 6px;
-        transform: rotate(45deg);
+        /* top: -1px;
+        left: 6px; */
+        transform: rotate(-45deg);
       }
       .button-close .ff {
-        top: -1px;
-        height: 18px;
-        transform: rotate(-45deg);
+        /* top: -1px; */
+        /* height: 18px; */
+        transform: rotate(45deg);
       }
       .button-close span {
         background-color: #000;
