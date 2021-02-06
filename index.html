@@ -19,7 +19,7 @@
         border: none;
         background-color: transparent;
         outline: none;
-        transform: scale(4);
+        transform: scale(7);
       }
       div {
         width: 100%;
@@ -28,9 +28,9 @@
         background-color: #000;
         transition: all 1s ease-in-out;
       }
-      span {
+      .span {
         width: 4px;
-        height: 14px;
+        height: 16px;
         background-color: #fff;
         display: block;
         position: absolute;
@@ -40,12 +40,12 @@
       .f {
         top: 0;
         /* left: 50%; */
-        left: 5px;
+        left: 6px;
         /* transform: translate(-50%, 0); */
       }
       .ff {
-        top: calc(50% - 7px);
-        left: 5px;
+        top: calc(50% - 8px);
+        left: 6px;
         transform: rotate(90deg);
       }
       .button-close .f {
@@ -58,7 +58,7 @@
         /* height: 18px; */
         transform: rotate(45deg);
       }
-      .button-close span {
+      .button-close .span {
         background-color: #000;
       }
       .button-close div {
@@ -69,8 +69,8 @@
   <body>
     <button class="button">
       <div>
-        <span class="f"></span>
-        <span class="ff"></span>
+        <div class="span f"></div>
+        <div class="span ff"></div>
       </div>
     </button>
     <script>
